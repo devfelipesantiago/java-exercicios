@@ -53,9 +53,9 @@ public class Exercicios4 {
         System.out.println("Gasolina: " + gasolina);
         System.out.println("Diesel: " + diesel);
 
-        int x = sc.nextInt();
+        int xu = sc.nextInt();
 
-        for (int i = 1; i <= x; i++) {
+        for (int i = 1; i <= xu; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);
             }
@@ -67,8 +67,8 @@ public class Exercicios4 {
         int out = 0;
 
         for (int i = 0; i < n; i++) {
-            int x = sc.nextInt();
-            if (x >= 10 && x <= 20) {
+            int xi = sc.nextInt();
+            if (xi >= 10 && x <= 20) {
                 in = in + 1;
             } else {
                 out = out + 1;
