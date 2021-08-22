@@ -1,3 +1,5 @@
+package Fundamentos;
+
 public class Metodos_string {
     public static void main(String[] args) {
         String original = " abcde FGHIJ ABC abc DEFG ";

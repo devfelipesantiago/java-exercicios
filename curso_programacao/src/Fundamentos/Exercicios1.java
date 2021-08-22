@@ -1,3 +1,5 @@
+package Fundamentos;
+
 import java.util.Locale;
 
 public class Exercicios1 {
