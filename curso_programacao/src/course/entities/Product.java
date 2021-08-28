@@ -6,12 +6,20 @@ public class Product {
     private double price;
     private int quantity;
 
+    // Constructor
     public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
 
+    //overload
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    //Methods
     public double totalValueInStock() {
         return price * quantity;
     }
@@ -24,6 +32,7 @@ public class Product {
         this.quantity -= quantity;
     }
 
+    //Return String
     public String toString() {
         return name+ ", $ "
                 + String.format("%.2f", price)
