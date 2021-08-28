@@ -2,9 +2,15 @@ package course.entities;
 
 public class Product {
 
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
+
+    public Product(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
 
     public double totalValueInStock() {
         return price * quantity;
@@ -19,6 +25,11 @@ public class Product {
     }
 
     public String toString() {
-        return name+ ", $ " + price + ", " + quantity + " units, Total: $ " + totalValueInStock();
+        return name+ ", $ "
+                + String.format("%.2f", price)
+                + ", "
+                + quantity
+                + " units, Total: $ "
+                + String.format("%.2f", totalValueInStock());
     }
 }
