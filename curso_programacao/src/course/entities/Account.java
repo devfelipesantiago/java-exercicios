@@ -3,24 +3,24 @@ package course.entities;
 public class Account {
 
     //Attributes
-    private Integer number;
+    private int number;
     private String holder;
-    private Double balance;
+    private double balance;
 
     //Constructor
-    public Account(Integer number, String holder, Double balance) {
+    public Account(int number, String holder) {
         this.number = number;
         this.holder = holder;
-        this.balance = balance;
     }
 
-    public Account(Integer number, String holder) {
-        this.holder = holder;
+    public Account(int number, String holder, double initialDeposit) {
         this.number = number;
+        this.holder = holder;
+        deposit(initialDeposit);
     }
 
     //Getters and Setters
-    public Integer getNumber() {
+    public int getNumber() {
         return number;
     }
 
@@ -32,21 +32,17 @@ public class Account {
         this.holder = holder;
     }
 
-    public Double getBalance() {
+    public double getBalance() {
         return balance;
-    }
-
-    protected void setBalance(Double balance) {
-        this.balance = balance;
     }
 
     //Methods
     public void deposit(double value) {
-        setBalance(getBalance() + value);
+        balance += value;
     }
 
     public void withdraw(double value) {
-        setBalance(getBalance() - (value + 5));
+        balance -= value + 5;
     }
 
     @Override
