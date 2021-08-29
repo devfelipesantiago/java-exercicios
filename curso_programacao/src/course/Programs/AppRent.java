@@ -1,4 +1,4 @@
-package course.POO;
+package course.Programs;
 
 import course.entities.Rent;
 
