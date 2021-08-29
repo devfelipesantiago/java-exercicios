@@ -15,12 +15,15 @@ public class AppRent {
         int quantityRoom = sc.nextInt();
 
         for (int i = 1; i <= quantityRoom; i++) {
+            sc.nextLine();
+
             System.out.println("Rent #"+i+":");
             System.out.print("Name: ");
-            sc.nextLine();
             String name = sc.nextLine();
+
             System.out.print("Email: ");
             String email = sc.nextLine();
+
             System.out.println("Room: ");
             int numberRoom = sc.nextInt();
             room[numberRoom] = new Rent(name, email);
