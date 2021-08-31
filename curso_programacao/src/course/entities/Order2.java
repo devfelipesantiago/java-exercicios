@@ -12,7 +12,6 @@ public class Order2 {
     private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
     private Date moment;
     private OrderStatus2 status;
-
     private Client client;
     private List<OrderItem> items = new ArrayList<>();
 
