@@ -1,4 +1,4 @@
-package course.entities.heranca;
+package course.heranca;
 
 public final class SavingsAccount extends Account {
 
