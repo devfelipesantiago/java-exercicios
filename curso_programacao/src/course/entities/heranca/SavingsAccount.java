@@ -1,6 +1,6 @@
 package course.entities.heranca;
 
-public class SavingsAccount extends Account {
+public final class SavingsAccount extends Account {
 
     private Double interestRace;
 
@@ -26,8 +26,7 @@ public class SavingsAccount extends Account {
     }
 
     @Override
-    public void withDraw(double amount) {
-        super.withDraw(amount);
-        balance -= 2.0;
+    public void withdraw(double amount) {
+        balance -= amount;
     }
 }
