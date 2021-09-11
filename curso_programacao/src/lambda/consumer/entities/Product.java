@@ -1,4 +1,4 @@
-package consumer.entities;
+package lambda.consumer.entities;
 
 public class Product {
     private String name;

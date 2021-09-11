@@ -1,6 +1,6 @@
-package consumer.application;
+package lambda.consumer.application;
 
-import consumer.entities.Product;
+import lambda.consumer.entities.Product;
 
 import java.util.ArrayList;
 import java.util.List;

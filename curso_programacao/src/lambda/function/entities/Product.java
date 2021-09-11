@@ -1,4 +1,4 @@
-package function.entities;
+package lambda.function.entities;
 
 public class Product {
     private String name;
