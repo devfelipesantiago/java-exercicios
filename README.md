@@ -1,2 +1,2 @@
 # java-exercicios
-Exercícios de estudos Java
+Exercícios de estudos pessoais de Java.
