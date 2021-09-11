@@ -19,7 +19,7 @@ public class Program {
             }
         };*/
 
-        Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+//        Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
         list.add(new Product("Tv", 900.0));
         list.add(new Product("Notebook", 1200.0));
@@ -28,7 +28,7 @@ public class Program {
         /* Maneira ruim de comparar
         list.sort(new myComparetor( ));*/
 
-        list.sort(comp);
+        list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
         for (Product p : list) {
             System.out.println(p);
