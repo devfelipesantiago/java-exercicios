@@ -3,6 +3,7 @@ package Streams.Exercises;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -32,7 +33,7 @@ public class Application {
 
             List<String> emails = list.stream()
                     .filter(employee -> employee.getSalary() > salary)
-                    .map(employee -> employee.getEmail())
+                    .map(Employee::getEmail)
                     .sorted()
                     .collect(Collectors.toList());
 
@@ -41,7 +42,7 @@ public class Application {
 
             double sum = list.stream()
                     .filter(employee -> employee.getName().charAt(0) == 'M')
-                    .map(employee -> employee.getSalary())
+                    .map(Employee::getSalary)
                     .reduce(0.0, Double::sum);
 
             System.out.println("Sum of salary from people whose name starts with 'M': " + String.format("%.2f", sum));
