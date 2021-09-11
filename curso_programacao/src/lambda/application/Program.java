@@ -11,17 +11,20 @@ public class Program {
 
         List<Product> list = new ArrayList<>();
 
+        /* Melhor sem lambda
         Comparator<Product> comp = new Comparator<Product>() {
             @Override
             public int compare(Product p1, Product p2) {
                 return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
             }
-        };
+        };*/
 
+        Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
         list.add(new Product("Tv", 900.0));
         list.add(new Product("Notebook", 1200.0));
         list.add(new Product("Tablet", 400.0));
+
         /* Maneira ruim de comparar
         list.sort(new myComparetor( ));*/
 
