@@ -18,6 +18,7 @@ public class Program {
             }
         };
 
+
         list.add(new Product("Tv", 900.0));
         list.add(new Product("Notebook", 1200.0));
         list.add(new Product("Tablet", 400.0));
